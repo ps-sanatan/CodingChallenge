@@ -16,7 +16,7 @@ _Note: main and variable files are kept separate for each component_
 
 ## Solution
 
-### The Terraform resources will consists of following structure
+### Folder Structure
 
 ```
 ├── main.tf                   // The primary entrypoint for terraform resources.
@@ -28,8 +28,7 @@ _Note: main and variable files are kept separate for each component_
 ### Module
 
 A module is a container for multiple resources that are used together. 
-Modules can be used to create lightweight abstractions, so that you can describe your infrastructure in terms of its architecture, rather than directly in terms of physical objects.
-Modular approach will help with code reusability
+The code is created with Modules, Modular approach will help with code reusability.
 
 For the solution, we have created and used five modules:
 1. resourcegroup - creating resourcegroup
@@ -38,7 +37,7 @@ For the solution, we have created and used five modules:
 4. compute - creating availability sets, network interfaces and virtual machines
 5. database - creating database server and database
 
-All the stacks are placed in the modules folder and the variable are stored under **terraform.tfvars**
+All resource modules are placed in the modules folder and the variable are stored under **terraform.tfvars**
 
 To run the code you need to append the variables in the terraform.tfvars
 
